@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Button from '../../components/shared/button';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { Link } from 'react-router-dom';
 
 function SignUp() {
     const [isVisible,setIsVisible]=useState(false)
@@ -38,6 +39,7 @@ function SignUp() {
         </div>
         
         <Button btnType="SignUp"/>
+        <p>already a user? <Link to={'/login'} >  <span> login here </span></Link></p>
 
 
       </form>
